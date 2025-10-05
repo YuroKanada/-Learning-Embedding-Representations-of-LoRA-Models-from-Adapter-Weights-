@@ -33,4 +33,4 @@ The goal is to obtain compact and interpretable representations that reflect the
 ## ⚙️ Training
 
 ```bash
-python main_train.py
+python3 main_train.py
