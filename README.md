@@ -10,20 +10,20 @@ The goal is to obtain compact and interpretable representations that reflect the
 ├── main_train.py            # Entry point for training and evaluation  
 │  
 ├── **dataset**/  
-│   ├── loader.py            # NPZ/JSONL data loader
-│   └── triplet_dataset.py   # TripletDataset class for (anchor, positive, negative) samples
-│
-├── **model**/
-│   ├── transformer_encoder.py  # Transformer encoder for adapter sequences
-│   ├── aggregator.py           # Token aggregator (attention / MLP / mean pooling)
-│   └── triplet_model.py        # Combined TripletTransformer model and TripletLoss
-│
-├── **train**/
-│   ├── optimizer.py         # Optimizer and learning rate scheduler
-│   └── trainer.py           # Training loop, logging, and checkpoint management
-│
-└── **utils**/
-    └── evaluate.py          # Triplet accuracy and similarity evaluation
+│   ├── loader.py            # NPZ/JSONL data loader  
+│   └── triplet_dataset.py   # TripletDataset class for (anchor, positive, negative) samples  
+│  
+├── **model**/  
+│   ├── transformer_encoder.py  # Transformer encoder for adapter sequences  
+│   ├── aggregator.py           # Token aggregator (attention / MLP / mean pooling)  
+│   └── triplet_model.py        # Combined TripletTransformer model and TripletLoss  
+│  
+├── **train**/  
+│   ├── optimizer.py         # Optimizer and learning rate scheduler  
+│   └── trainer.py           # Training loop, logging, and checkpoint management  
+│  
+└── **utils**/  
+    └── evaluate.py          # Triplet accuracy and similarity evaluation  
 
 --
 
