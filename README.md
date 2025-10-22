@@ -5,11 +5,11 @@ The goal is to obtain compact and interpretable representations that reflect the
 
 ## Repository Structure
 
-**triplet_transformer+aggregator**/
-├── config.py                # Global configuration (hyperparameters, paths, etc.)
-├── main_train.py            # Entry point for training and evaluation
-│
-├── **dataset**/
+**triplet_transformer+aggregator**/  
+├── config.py                # Global configuration (hyperparameters, paths, etc.)  
+├── main_train.py            # Entry point for training and evaluation  
+│  
+├── **dataset**/  
 │   ├── loader.py            # NPZ/JSONL data loader
 │   └── triplet_dataset.py   # TripletDataset class for (anchor, positive, negative) samples
 │
