@@ -13,7 +13,7 @@ def load_model_matrix(category_dir, dimension):
         mid: torch.tensor(np.stack([temp[mid][c] for c in category_names]), dtype=torch.float32)
         for mid in temp if len(temp[mid]) == len(category_names)
     }
-    print(f"✅ Loaded {len(model_matrix_dict)} model matrices")
+    print(f"Loaded {len(model_matrix_dict)} model matrices")
     return model_matrix_dict
 
 
