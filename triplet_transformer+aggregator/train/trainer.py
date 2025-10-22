@@ -28,7 +28,7 @@ class Trainer:
         # aggregatorは常に学習対象
         for p in self.model.aggregator.parameters():
             p.requires_grad = True
-        print("🚀 Aggregator and Encoder training simultaneously.")
+        print("Aggregator and Encoder training simultaneously.")
 
     def train_epoch(self, dataloader, epoch):           
         self.model.train()
@@ -119,18 +119,18 @@ class Trainer:
         if (epoch + 1) % 5 == 0:
             torch.save(self.model.encoder.state_dict(), f"{self.save_dir}/encoder_epoch{epoch+1}_{timestamp}.pt")
             torch.save(self.model.aggregator.state_dict(), f"{self.save_dir}/aggregator_epoch{epoch+1}_{timestamp}.pt")
-            print(f"💾 Regular checkpoint saved at epoch {epoch+1}")
+            print(f"Regular checkpoint saved at epoch {epoch+1}")
 
         # --- ベスト更新時 ---
         if val_acc > self.best_acc:
             # 古いベストを削除
             if hasattr(self, "best_encoder_path") and os.path.exists(self.best_encoder_path):
                 os.remove(self.best_encoder_path)
-                print(f"🗑️ Removed old best encoder: {os.path.basename(self.best_encoder_path)}")
+                print(f"Removed old best encoder: {os.path.basename(self.best_encoder_path)}")
 
             if hasattr(self, "best_aggregator_path") and os.path.exists(self.best_aggregator_path):
                 os.remove(self.best_aggregator_path)
-                print(f"🗑️ Removed old best aggregator: {os.path.basename(self.best_aggregator_path)}")
+                print(f"Removed old best aggregator: {os.path.basename(self.best_aggregator_path)}")
 
             # 新しいベストを保存
             best_encoder_path = f"{self.save_dir}/best_encoder_epoch{epoch+1}_{timestamp}.pt"
@@ -143,5 +143,5 @@ class Trainer:
             self.best_encoder_path = best_encoder_path
             self.best_aggregator_path = best_aggregator_path
 
-            print(f"🏆 New BEST model saved at epoch {epoch+1} (val_acc={val_acc:.4f})")
+            print(f"New BEST model saved at epoch {epoch+1} (val_acc={val_acc:.4f})")
 
