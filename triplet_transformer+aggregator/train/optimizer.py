@@ -53,7 +53,7 @@ def build_optimizer_scheduler(model, lr1, lr2, weight_decay, batch_size, num_epo
             return step / max(1, warmup_steps)
         progress = (step - warmup_steps) / max(1, total_steps - warmup_steps)
         cosine_decay = 0.5 * (1 + math.cos(math.pi * progress))
-        # 🔽 最低学習率をmin_lr_ratioで下支え
+        # 最低学習率をmin_lr_ratioで下支え
         return min_lr_ratio + (1 - min_lr_ratio) * cosine_decay
 
     # scheduler = LambdaLR(optimizer, lr_lambda)
