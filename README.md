@@ -14,12 +14,14 @@ Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata, 
 If you use this repository or the encoder in your research, please cite:
 
 ```bibtex
-@inproceedings{kanada2026retrieval,
-  title = {Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata},
-  author = {Kanada, Yuro and Oe, Yuma and Pham, Huu-Long and Kato, Makoto P. and Ohshima, Hiroaki and Fujita, Sumio and Shoji, Yoshiyuki},
-  booktitle = {Proceedings of the 16th ACM International Conference on Multimedia Retrieval},
-  year = {2026},
-  note = {To appear}
+@inproceedings{Kanada2026retrieval,
+author = {Kanada, Yuro and Oe, Yuma and Pham, Huu-Long and Kato, Makoto P. and Ohshima, Hiroaki and Fujita, Sumio and Shoji, Yoshiyuki},
+title = {Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata},
+year = {2026},
+doi = {10.1145/3805622.3810428},
+booktitle = {Proceedings of the 2026 International Conference on Multimedia Retrieval},
+pages = {2818–2825},
+series = {ICMR '26}
 }
 ```
 
