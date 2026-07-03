@@ -7,7 +7,7 @@ The goal is to obtain compact and interpretable representations that reflect the
 
 This work has been accepted to **ICMR 2026**:
 
-Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata, Yuro Kanada, Yuma Oe, Huu-Long Pham, Makoto P. Kato, Hiroaki Ohshima, Sumio Fujita and Yoshiyuki Shoji, Proc. of The 16th ACM International Conference on Multimedia Retrieval (ICMR2026), to appear, 2026.
+Retrieval of LoRA Models based on Layer-Wise Weight Embedding without Metadata, Yuro Kanada, Yuma Oe, Huu-Long Pham, Makoto P. Kato, Hiroaki Ohshima, Sumio Fujita and Yoshiyuki Shoji, Proc. of The 16th ACM International Conference on Multimedia Retrieval (ICMR2026), 2026.
 
 ## Citation
 
